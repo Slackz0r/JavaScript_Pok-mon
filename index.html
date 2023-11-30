@@ -26,13 +26,28 @@
     
     <button id="showPokemon">Show Pokemon</button>
 <br>
-
+    <h2>Add a new pokémon:</h2>
     <input type="text" id="pokeName" placeholder="Name"> 
     <input type="number" id="pokeWeight" placeholder="Weight"> 
     <input type="number" id="pokeHeight" placeholder="Height"> 
-    <input type="text" id="pokeType" placeholder="Type"> 
-    <button id="addPokemon">Add Pokemon</button>
     
+    <select name="Poketype" id="pokeType">
+      <option value="" hidden>Type</option>
+      <option value="grass">Grass</option>
+      <option value="fire">Fire</option>
+      <option value="electric">Electric</option>
+      <option value="psychic">Psychic</option>
+      <option value="water">Water</option>
+      <option value="normal">Normal</option>
+      <option value="bug">Bug</option>
+      <option value="dark">Dark</option>
+      <option value="dragon">Dragon</option>
+      <option value="fairy">Fairy</option>
+    </select>
+    
+    
+    <button id="addPokemon">Add Pokemon</button>
+
 
     <ul id="pokeUl"></ul>
   </body>
