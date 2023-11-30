@@ -103,10 +103,21 @@ let pokeList = document.querySelector("#pokeUl");
 
 document.querySelector("#showPokemon").addEventListener("click", () => {
   let pokeCheck = document.querySelectorAll("[type='checkbox']:checked");
-  console.log(pokeCheck);
+
   pokeList.innerText = "";
   pokeArray = [];
-  PokedexData.forEach((pokemon) => {
+  pokeCheck.forEach((checkbox) => {
+    pokeArray.push(checkbox.name);
+    console.log(pokeArray);
+  })
+
+  let filterPokemon = PokedexData.filter((pokemon) => {
+    return pokeArray.includes(pokemon.type)
+
+  })
+
+
+  filterPokemon.forEach((pokemon) => {
     let li = document.createElement("li");
     li.innerHTML = `
     <p>Name: ${pokemon.name}</p>
