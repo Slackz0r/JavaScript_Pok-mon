@@ -121,8 +121,8 @@ document.querySelector("#showPokemon").addEventListener("click", () => {
     let li = document.createElement("li");
     li.innerHTML = `
     <p>Name: ${pokemon.name}</p>
-    <p>Height: ${pokemon.height}</p>
-    <p>Weight: ${pokemon.weight}</p>
+    <p>Height: ${pokemon.height} cm</p>
+    <p>Weight: ${pokemon.weight} kg</p>
     <p>Type: ${pokemon.type}</p>
     <img src="${pokemon.url}">`;
     pokeList.append(li);
