@@ -112,10 +112,14 @@ document.querySelector("#showPokemon").addEventListener("click", () => {
   })
 
   let filterPokemon = PokedexData.filter((pokemon) => {
+    if(pokeArray.length === 0){
+      return pokemon;
+
+    }
     return pokeArray.includes(pokemon.type)
 
   })
-
+console.log(filterPokemon);
 
   filterPokemon.forEach((pokemon) => {
     let li = document.createElement("li");
@@ -144,6 +148,7 @@ document.querySelector("#addPokemon").addEventListener("click", () => {
     height: `${pokeHeight.value}`,
     weight: `${pokeWeight.value}`,
     type: `${pokeType.value}`,
+    url: "https://pm1.aminoapps.com/6761/cb2442de31ba3a34f3237ce81f133a380040db64v2_00.jpg",
   }
 
 PokedexData.push(pokeObject);
