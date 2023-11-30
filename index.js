@@ -129,3 +129,26 @@ document.querySelector("#showPokemon").addEventListener("click", () => {
     // console.log(li);
   });
 });
+
+
+
+
+
+document.querySelector("#addPokemon").addEventListener("click", () => {
+  let pokeName = document.querySelector("#pokeName");
+  let pokeWeight = document.querySelector("#pokeWeight");
+  let pokeHeight = document.querySelector("#pokeHeight");
+  let pokeType = document.querySelector("#pokeType");
+  let pokeObject = {
+    name: `${pokeName.value}`,
+    height: `${pokeHeight.value}`,
+    weight: `${pokeWeight.value}`,
+    type: `${pokeType.value}`,
+  }
+
+PokedexData.push(pokeObject);
+
+console.log(PokedexData);
+
+});
+
