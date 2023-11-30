@@ -99,3 +99,22 @@ const PokedexData = [
   },
 ];
 
+let pokeList = document.querySelector("#pokeUl");
+
+document.querySelector("#showPokemon").addEventListener("click", () => {
+  let pokeCheck = document.querySelectorAll("[type='checkbox']:checked");
+  console.log(pokeCheck);
+  pokeList.innerText = "";
+  pokeArray = [];
+  PokedexData.forEach((pokemon) => {
+    let li = document.createElement("li");
+    li.innerHTML = `
+    <p>Name: ${pokemon.name}</p>
+    <p>Height: ${pokemon.height}</p>
+    <p>Weight: ${pokemon.weight}</p>
+    <p>Type: ${pokemon.type}</p>
+    <img src="${pokemon.url}">`;
+    pokeList.append(li);
+    // console.log(li);
+  });
+});

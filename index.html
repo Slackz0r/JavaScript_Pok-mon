@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <h1>Pokemon application</h1>
+    <h2>Type:</h2>
+    <input type="checkbox" name="grass" value="type" id="grass">
+    <label for="grass">Grass</label>
+    <input type="checkbox" name="fire" value="type" id="fire">
+    <label for="fire">Fire</label>
+    <input type="checkbox" name="electric" value="type" id="electric">
+    <label for="electric">Electric</label>
+    <input type="checkbox" name="psychic" value="type" id="psychic">
+    <label for="psychic">Psychic</label>
+    <input type="checkbox" name="water" value="type" id="water">
+    <label for="water">Water</label>
+    <input type="checkbox" name="normal" value="type" id="normal">
+    <label for="normal">Normal</label>
+    
+    <button id="showPokemon">Show Pokemon</button>
+    <button id="addPokemon">Add Pokemon</button>
+    
+
+    <ul id="pokeUl"></ul>
   </body>
 </html>
