@@ -92,6 +92,7 @@ const PokedexData = [
   },
   {
     name: "hypno",
+    
     height: 16,
     weight: 756,
     type: "psychic",
@@ -121,7 +122,7 @@ document.querySelector("#showPokemon").addEventListener("click", () => {
     let li = document.createElement("li");
     li.innerHTML = `
     <p>Name: ${pokemon.name}</p>
-    <p>Height: ${pokemon.height} cm</p>
+    <p>Height: ${pokemon.height} m</p>
     <p>Weight: ${pokemon.weight} kg</p>
     <p>Type: ${pokemon.type}</p>
     <img src="${pokemon.url}">`;
